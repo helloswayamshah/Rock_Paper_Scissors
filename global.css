@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+.heading {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #081829;
+  height: 100px;
+}
+
+#game_name {
+  color: white;
+}
+
+.buttons {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.button {
+  margin: 1%;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border-color: transparent;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+#Rock {
+  background-image: url(Assets/rock.png);
+  background-position: center;
+  background-size: cover;
+}
+#Paper {
+  background-image: url(Assets/paper.png);
+  background-position: center;
+  background-size: cover;
+}
+#Scissors {
+  background-image: url(Assets/scissors.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+}
