@@ -22,18 +22,27 @@ rock.addEventListener("click", () => {
   let comp_choice = ComputerChoiceGenerator();
   console.log(rock.id, comp_choice);
   if (comp_choice === "rock") {
-    let status = document.querySelector("#status");
+    let comp_print = document.getElementById("comp_choice");
+    comp_print.innerText = "";
+    let status = document.getElementById("status");
+    comp_print.innerText = "Computer Chose Rock";
     status.innerText = "It's A Draw";
     ScoreUpdater(player_score, computer_score);
   }
   if (comp_choice === "paper") {
+    let comp_print = document.getElementById("comp_choice");
+    comp_print.innerText = "";
     let status = document.querySelector("#status");
+    comp_print.innerText = "Computer Chose Paper";
     status.innerText = "Computer Wins!";
     computer_score++;
     ScoreUpdater(player_score, computer_score);
   }
   if (comp_choice === "scissors") {
+    let comp_print = document.getElementById("comp_choice");
+    comp_print.innerText = "";
     let status = document.querySelector("#status");
+    comp_print.innerText = "Computer Chose Scissors";
     status.innerText = "You Win!";
     player_score++;
     ScoreUpdater(player_score, computer_score);
@@ -43,40 +52,59 @@ paper.addEventListener("click", () => {
   let comp_choice = ComputerChoiceGenerator();
   console.log(paper.id, comp_choice);
   if (comp_choice === "rock") {
-    let status = document.querySelector("#status");
+    let comp_print = document.getElementById("comp_choice");
+    comp_print.innerText = "";
+    let status = document.getElementById("status");
+    comp_print.innerText = "Computer Chose Rock";
     status.innerText = "You Win!";
     player_score++;
     ScoreUpdater(player_score, computer_score);
   }
   if (comp_choice === "paper") {
+    let comp_print = document.getElementById("comp_choice");
+    comp_print.innerText = "";
     let status = document.querySelector("#status");
+    comp_print.innerText = "Computer Chose Paper";
     status.innerText = "It's A Draw";
     ScoreUpdater(player_score, computer_score);
   }
   if (comp_choice === "scissors") {
+    let comp_print = document.getElementById("comp_choice");
+    comp_print.innerText = "";
     let status = document.querySelector("#status");
+    comp_print.innerText = "Computer Chose Scissors";
     status.innerText = "Computer Wins!";
     computer_score++;
     ScoreUpdater(player_score, computer_score);
   }
 });
+
 scissors.addEventListener("click", () => {
   let comp_choice = ComputerChoiceGenerator();
   console.log(scissors.id, comp_choice);
   if (comp_choice === "rock") {
-    let status = document.querySelector("#status");
+    let comp_print = document.getElementById("comp_choice");
+    comp_print.innerText = "";
+    let status = document.getElementById("status");
+    comp_print.innerText = "Computer Chose Rock";
     status.innerText = "Computer Wins!";
     computer_score++;
     ScoreUpdater(player_score, computer_score);
   }
   if (comp_choice === "paper") {
+    let comp_print = document.getElementById("comp_choice");
+    comp_print.innerText = "";
     let status = document.querySelector("#status");
+    comp_print.innerText = "Computer Chose Paper";
     status.innerText = "You Win!";
     player_score++;
     ScoreUpdater(player_score, computer_score);
   }
   if (comp_choice === "scissors") {
+    let comp_print = document.getElementById("comp_choice");
+    comp_print.innerText = "";
     let status = document.querySelector("#status");
+    comp_print.innerText = "Computer Chose Scissors";
     status.innerText = "It's A Draw";
     ScoreUpdater(player_score, computer_score);
   }
